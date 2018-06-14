@@ -12,6 +12,7 @@
             $this->load->model('produk_model');
             $this->load->model('testimoni_model');
             $this->load->model('galeri_model');
+            $this->load->model('album_model');
 
             $layout_active = $this->layout_model->GetActiveLayout();
 
@@ -39,6 +40,11 @@
             $data['galeri'] =  $galeri;
             $galeri_count = $this->galeri_model->GetCount();
             $data['galeri_count'] =  $galeri_count;
+  
+            $album = $this->album_model->Get();
+            $data['album'] =  $album;
+            $album_count = $this->album_model->GetCount();
+            $data['album_count'] =  $album_count;
             switch ($layout_active) {
                 case 1:
                     $this->load->view('template/1/header.php',$data);
