@@ -18,10 +18,9 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php echo base_url(); ?>assets/js/javascript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="<?php echo base_url();?>library/select2-develop/dist/js/select2.js"></script>
+    <script src="<?php echo base_url();?>vendor/components/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>vendor/ivaynberg/select2/dist/js/select2.js"></script>
 
 	<!-- Image Modal -->
     <script>
@@ -29,7 +28,7 @@
             $('.view_data').click(function(){  
                 var id_galeri = $(this).attr("id");  
                 $.ajax({  
-                        url:"modal/image_modal.php",  
+                        url:"index.php/modal/image_modal",  
                         method:"post",  
                         data:{id_galeri:id_galeri},  
                         success:function(data){  

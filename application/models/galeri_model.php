@@ -15,6 +15,13 @@
             $row = $data->row_array();
             return $row['jumlah'];
         }
+
+        public function GetGaleri($id){
+            $query = $this->db->query('SELECT album.judul_album,galeri.gambar,galeri.judul_galeri,galeri.deskripsi_gambar FROM galeri INNER JOIN album ON galeri.id_album = album.id_album WHERE galeri.id_galeri = ?',
+            array($id));
+
+            return $query->result_array();
+        }
     
     }
     
