@@ -1,0 +1,186 @@
+.nav-item{
+    font-size: 1em !important;
+    margin-top: 10px;
+    margin-right: 20px;
+    color : white !important;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.btn-active{
+    background-color: #EF6B33;
+}
+.btn-non-active{
+    background-color: rgb(172, 108, 80);
+}
+.btn-logout{
+    background-color: #EF3333;
+}
+.btn:hover{
+    background: rgb(131, 60, 30);
+}
+#sidebar{
+    margin-top: 70px;
+    position: fixed;
+    width:200px;
+    height: 100%;
+    background: #FFA27B;
+    left: -200px;
+    transition: all 500ms linear; 
+    z-index: 100002;
+}
+#sidebar.active{
+    left: 0px;
+}
+#toggle{
+    margin : 15px 0px 20px 20px;
+    background-color: #EF3333;
+}
+#content{
+    position: absolute;
+    height: 100%;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    transition: all 500ms linear;
+}
+#content.active-content{
+    left:200px;
+    width: 85%;
+}
+#sidebar ul li{
+    color:rgba(255, 255, 255, 0.9) !important;
+    list-style: none;
+    padding: 3px 5px;
+    /* border-bottom: 1px solid rgba(100,100,100,0.3); */
+    font-size: 1em;
+    z-index: 10000;
+}
+#scroll{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+#login-user .toggle-btn{
+    left: 220px;
+    z-index: 100001;
+}
+#login-user .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #FFF;
+    margin: 3px 0px;
+}
+.login-user{
+    background-color: #FF8957;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10000;
+    border-bottom: #151515;
+    border-bottom-style: solid;
+}
+.theme-space{
+    margin: 5px 5px 5px 5px;
+}
+.theme-background-1{
+    background-color: #A0E26D;
+}
+.theme-background-2{
+    background-color: #5581A5;
+}
+.theme-background-3{
+    background-color: #FFC77B;
+}
+.theme-background-4{
+    background-color: #E66F91;
+}
+.theme-container{
+    border: #67694e;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 5px 5px 5px;
+}
+
+.theme-header{
+    /* background-color: rgb(252, 226, 191); */
+    text-align: center;
+}
+.btn-primary{
+    background-color: #5581A5 !important;
+}
+.btn-danger{
+    background-color: #E66F91 !important;
+}
+.btn-success{
+    background-color: #A0E26D !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+    color: white;
+}
+.btn-file{
+    background-color: #FFC77B;
+    color: black;
+}
+.btn-file:hover{
+    background-color: rgb(245, 217, 179);
+    color: black;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    #sidebar{
+        position: fixed;
+        width: 80px;
+    }
+    #content.active-content{
+        left: 80px;
+    }
+    .col-text{
+        display: none;
+    }
+    #login-user .toggle-btn{
+        left: 210px;
+    }
+    #sidebar.active{
+        left: 0px;
+    }
+    #login-user.active .toggle-btn{
+        left: 110px;
+    }
+    #detail_user{
+        display: none;
+    }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+     
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+ } 

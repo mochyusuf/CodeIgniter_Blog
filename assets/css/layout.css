@@ -1,0 +1,57 @@
+.layout-card{
+    position: fixed;
+    width: 100px;
+    height: 300px;
+    margin-top: 150px;
+    z-index: 10000;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+    transition: all 500ms linear;
+}
+
+#layout-change{
+    position: fixed;
+    margin-top: 550px;
+    margin-left: 15px;
+    z-index: 10000;
+    opacity: 0.2;
+}
+
+#layout-change:hover{
+    opacity: 1;
+}
+
+.layout-1{
+    background-color: #d8d868;
+}
+
+.layout-2{
+    background-color: #d3d0d0;
+}
+
+.layout-3{
+    background-color: #d86f6f;
+}
+
+.layout-4{
+    background-color: #9adb7c;
+}
+
+.layout-5{
+    background-color: #8a92d6;
+}
+
+.layout-back{
+    background-color: #dd90d0;
+}
+
+.layout-card>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+.active-layout{
+    margin-left: -100px;
+    transition: all 500ms linear;
+}

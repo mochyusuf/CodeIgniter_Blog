@@ -1,0 +1,346 @@
+/* Style Layout 1 */
+
+.carousel-inner img {
+    width: 100%;
+	height: 100%;
+}
+
+.img-width img{
+	width : 100%;
+	height: auto;
+}
+
+.img-height img{
+	width : auto;
+	height: 100%;
+}
+
+.image-holder{
+	width: auto;
+	height: auto;
+}
+
+.card{
+	margin-bottom: 30px;
+}
+
+.card-header{
+	background: rgb(61, 66, 71);
+	color : #ffffff;
+	text-align: center;
+}
+
+body {
+  position: relative;
+}
+
+.card-news{
+  padding: 30px 0px 30px 0px;
+}
+
+.card-view{
+  margin: 10px 0px 30px 0px;
+}
+
+.btn-space{
+  margin-bottom: 10px;
+}
+
+.center-cropped {
+	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	object-position: center; /* Center the image within the element */
+	height: 300px;
+	width: 100%;
+}
+
+.center-cropped-500 {
+	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	object-position: center; /* Center the image within the element */
+	height: 400px;
+	width: 100%;
+}
+
+.card-image{
+  background-color: transparent !important;
+}
+
+#heading-h{
+	display: inline !important;
+}
+
+.margin{
+	margin: 10px 10px 10px 10px;
+}
+
+.width-100{
+	width: 100% !important;
+}
+
+.theme-btn-search{
+	background-color: #BABA00 !important;
+	border-color: #000000 !important;
+}
+
+.theme-btn-search:hover{
+	background-color: rgb(58, 58, 2) !important;
+	border-color: #000000 !important;
+}
+
+.theme-btn-search:active{
+	background-color: rgb(58, 58, 2) !important;
+	border-color: #000000 !important;
+}
+
+.custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.theme-search{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tag-content{
+	margin-right : 10px;
+	padding : 3px 3px 3px 3px;
+}
+
+
+/* Body Website Tema */
+.theme-website-body{
+	background-color: #1a1a09;
+}
+
+/* Navbar Tema */
+.theme-navbar{
+	background-color: #FFFF00;
+
+	color: rgb(0, 0, 0) !important;
+}
+
+.theme-navbar #collapsibleNavbar{
+	margin-top: 5px;
+}
+
+/* Navbar Brand Tema */
+.theme-navbar-brand{
+	background-color: #C7C707;
+	font-weight: bold;
+	width: 90px;
+	margin: 0px 3px 0px 3px;
+	text-align: center;
+}
+
+/* Navbar Button Tema */
+.theme-navbar-button{
+	background-color: rgb(94, 94, 3);
+}
+
+/* Navbar Item Tema */
+.theme-navbar-item{
+	background-color: #b4b20f;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 0px 0px 5px;
+	border-color: black !important;
+	border-width: 3px;
+	border-style: solid;
+}
+
+/* Navbar Link Tema */
+.theme-navbar-link{
+	color: #ffffff !important;
+}
+
+/* Header Tema */
+.theme-header{
+	background-color: #e6e349;
+	margin: 0px 0px 0px 0px;
+	color: #000000;
+}
+
+/* Header Detail Tema */
+.theme-header-detail{
+	background-color: #e9e7d9;
+}
+
+/* Body Tema */
+.theme-body{
+	background-color: #ffffd9 !important;
+	margin: 0px 0px 0px 0px;
+}
+
+/* Card Tema */
+.theme-card{
+	margin-top: 10px;
+}
+
+/* Body Card Tema */
+.theme-card-body{
+	background-color: #fcfcac;
+	padding: 0px 0px 4px 0px;
+	margin: 0px 0px 0px 0px;
+	background: #fcfcac;
+}
+
+/* Space Between Tema Elemen */
+.theme-space{
+	margin: 5px 0px 5px 0px !important;
+}
+
+/* Button Primary Tema */
+.theme-btn-primary{
+	background-color: #b1b106 !important;
+	border-style: solid;
+	border-color: black;
+}
+
+/* Pagination Tema */
+.theme-pagination{
+	background-color: #d3d158;
+}
+
+/* Pagination Page Disable Tema */
+.theme-page-disable .page-link{
+	background-color: #cccc99 !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffffff !important;
+}
+
+/* Pagination Page Active Tema */
+.theme-page-active .page-link{
+	background-color: #e9e935 !important;
+	color: #000000 !important;
+	border-color: #ffffff;
+}
+
+/* Pagination Page Tema */
+.theme-page .page-link{
+	background-color: #fffbbf !important;
+	color: #000000;
+	border-color: #ffffff;
+}
+
+/* List Tema Active */
+.theme-list-active{
+	background-color: #eeee49;
+	color: #000000;
+}
+
+/* List Tema */
+.theme-list{
+	background-color: #fffef2;
+	color: #000000;
+}
+
+.theme-tag a{
+	text-decoration: none;
+	color: #000000;
+}
+
+/* Footer Kategori Tema */
+.theme-footer-category{
+	margin-top: 50px;
+	background-color: #fffbbf;
+	border-top-style: solid !important;
+	border-top-color: #000000;
+	border-bottom-style : solid;
+	border-bottom-color: #000000;
+}
+
+/* Tag Tema */
+.theme-tag{
+	background-color: #ffffb5;
+	margin-right : 10px;
+	padding : 3px 3px 3px 3px;
+	border-style : solid;
+	border-color: #000000;
+}
+
+/* Modal Tema */
+.theme-modal{
+	background-color: #ffffd9 !important;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+}
+
+/* Footer Tema */
+.theme-footer{
+	background-color: #C7C707;
+	margin: 0px 0px 0px 0px;
+}
+
+.theme-card{
+	height: 100%;
+}
+
+/* Theme Search */
+.theme-search{
+	text-align: center;
+	background-color: #afaf52;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	#sidebar{
+		width:100px;
+	}
+	#content.active-content{
+		left: 100px;
+	}
+	.col-text{
+		display: none;
+	}
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	.center-cropped {
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+		object-position: center; /* Center the image within the element */
+		height: 300px;
+		width: 100%;
+	}
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	.center-cropped {
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+		object-position: center; /* Center the image within the element */
+		height: 300px;
+		width: 100%;
+	}
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.center-cropped {
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+		object-position: center; /* Center the image within the element */
+		height: 400px;
+		width: 100%;
+	}
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  
+	.center-cropped {
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+		object-position: center; /* Center the image within the element */
+		height: 250px;
+		width: 100%;
+	}
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	.center-cropped {
+		object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+		object-position: center; /* Center the image within the element */
+		height: 300px;
+		width: 100%;
+	}
+}

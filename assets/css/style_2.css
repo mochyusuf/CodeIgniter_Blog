@@ -1,0 +1,331 @@
+/* Style Layout 2 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+
+/* For Image */
+.center-cropped {
+	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	object-position: center; /* Center the image within the element */
+	height: 150px;
+	width: 100%;
+}
+
+.center-cropped-news {
+	object-fit: cover;       /* Scale the image so it covers whole area, thus will likely crop */
+	object-position: center; /* Center the image within the element */
+	height: 200px;
+	width: 100%;
+}
+
+.width-100{
+	width: 100% !important;
+}
+
+/* Theme Search */
+.theme-search{
+	text-align: center;
+	background-color: #5e5e53;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.theme-btn-search{
+	background-color: #444442 !important;
+	border-color: #000000 !important;
+}
+
+.theme-btn-search:hover{
+	background-color: #8d8d88 !important;
+	border-color: #000000 !important;
+}
+
+.theme-btn-search:active{
+	background-color: #8d8d88  !important;
+	border-color: #000000 !important;
+}
+
+/* Jumbotron Tema */
+.theme-jumbotron{
+    background: linear-gradient(to right, rgb(10, 10, 10) , rgb(112, 112, 112));
+    margin : 50px 0px 0px 0px;
+    color: white;
+}
+
+/* Navbar Tema */
+.theme-navbar{
+    background: linear-gradient(to bottom, #717071, #959494);   
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.theme-navbar-link{
+    margin: 0px 0px 0px 0px;
+}
+
+.theme-navbar-link .navbar-nav .nav-item{
+    background-color: #7C7C7C !important;
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+}
+
+.theme-navbar-link .navbar-nav .nav-item .nav-link{
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.theme-website-body{
+    background-color: #B9B9B9 !important;
+}
+
+.theme-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    background-color: #DEDEDE;
+}
+
+.theme-header{
+    background-color: #858484;
+}
+
+.theme-row{
+    margin : 20px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+.theme-col{
+    padding: 0px 5px 0px 5px !important;
+}
+
+.theme-card-round{
+    padding: 5px 5px 5px 5px;
+    background-color: #B2B2B2;
+    border-radius: 15px;
+}
+
+.theme-btn-primary{
+    background-color: #7C7C7C !important;
+    border-style: none;
+}
+
+.theme-btn-primary:hover{
+    background-color: #e4dede !important;
+    border-style: none;
+}
+
+.theme-text-center{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.theme-card{
+    margin-top: 10px;
+    background-color: #B2B2B2;
+}
+
+.theme-testimoni{
+    background-color: #cac8c8;
+}
+
+.theme-card-round-top{
+    border-radius: 15px 15px 0px 0px !important;
+}
+
+.theme-card-round-bottom{
+    padding: 5px 5px 5px 5px;
+    background-color: #cccbcb;
+    border-radius: 0px 0px 15px 15px !important;
+}
+
+/* Footer Tema */
+.theme-footer{
+    margin-top: 20px;
+    background-color: #000000;
+}
+
+.theme-footer-category{
+    margin-top: 50px;
+    background-color: #858484;
+}
+
+/* Background Tema */
+.theme-background-1{
+    background-color: #828081;
+}
+
+.theme-background-2{
+    background-color: #CAC9C9;
+}
+
+.theme-menu-vertical a{
+    color: white;
+}
+
+.theme-space{
+    margin-bottom: 10px;
+}
+
+.theme-image{
+    width : 100%;
+    height: 100%;
+}
+
+/* Dropdown Tema */
+.theme-dropdown{
+    background-color: #ececec;
+}
+
+.theme-dropdown>li>a:hover{
+    color: white;
+    background-color: #000000;
+}
+
+.theme-dropdown-active{
+    background-color: #929090 !important;
+}
+
+/* Button Tema */
+.theme-button-default{
+    background-color: #727272 !important;
+}
+
+/* Pagination Tema */
+.theme-pagination{
+	background-color: #1d1d1d;
+}
+
+/* Pagination Page Disable Tema */
+.theme-page-disable .page-link{
+	background-color: #5A5A5A !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black !important;
+}
+
+/* Pagination Page Active Tema */
+.theme-page-active .page-link{
+	background-color: #818181 !important;
+	color: #000000 !important;
+	border-color: black;
+}
+
+/* Pagination Page Tema */
+.theme-page .page-link{
+	background-color: #b1b1b1 !important;
+	color: #000000;
+	border-color: black;
+}
+
+.theme-container-pagination{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.btn-space{
+    margin-bottom: 10px;
+}
+
+.theme-header-detail{
+    background-color: #9ba2a8;
+}
+
+.theme-card-body{
+    background-color: #9ba2a8;
+	padding: 0px 0px 4px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 90%;
+}
+
+/* Tag Tema */
+.theme-tag{
+	background-color: #cecece;
+	margin-right : 10px;
+	padding : 3px 3px 3px 3px;
+	border-style : solid;
+	border-color: #000000;
+}
+
+.theme-tag a{
+	text-decoration: none;
+	color: #000000;
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .center-cropped-news {
+        height: 200px;
+    }
+    .center-cropped {
+        height: 80px;
+    }
+    #footersecondary{
+        display: none;
+    }
+    .theme-navbar-link .navbar-nav .nav-item{
+        width: 95%;
+    }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .center-cropped-news {
+        height: 300px;
+    }
+    .center-cropped {
+        height: 100px;
+    }
+    .theme-navbar-link .navbar-nav .nav-item{
+        width: 90px;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .center-cropped-news {
+        height: 200px;
+    }
+    .center-cropped {
+        height: 120px;
+    }
+    .theme-navbar-link .navbar-nav .nav-item{
+        width: 120px;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .center-cropped-news {
+        height: 180px;
+    }
+    .center-cropped {
+        height: 130px;
+    }
+    .theme-navbar-link .navbar-nav .nav-item{
+        width: 150px;
+    }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .center-cropped-news {
+        height: 200px;
+    }
+    .center-cropped {
+        height: 150px;
+    }
+    .theme-navbar-link .navbar-nav .nav-item{
+        width: 200px;
+    }
+}
