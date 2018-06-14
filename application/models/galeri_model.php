@@ -5,7 +5,7 @@
     class galeri_model extends CI_Model {
     
         public function Get(){
-            $query = $this->db->query('SELECT id_galeri,gambar FROM galeri INNER JOIN album on galeri.id_album = album.id_album where album.status = 1 ORDER BY galeri.id_galeri DESC');
+            $query = $this->db->query('SELECT galeri.id_galeri,galeri.id_album,galeri.gambar,galeri.judul_galeri,galeri.deskripsi_gambar FROM galeri INNER JOIN album on galeri.id_album = album.id_album where album.status = 1 ORDER BY galeri.id_galeri DESC');
 
             return $query->result_array();
         }

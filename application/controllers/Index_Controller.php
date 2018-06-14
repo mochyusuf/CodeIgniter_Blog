@@ -47,33 +47,27 @@
                     break;
         
                 case 2:
-                    $this->load->view('template/2/header.php');
+                    $this->load->view('template/2/header.php',$data);
                     $this->load->view('index/2/index_view.php');
                     $this->load->view('template/2/footer.php');
                     break;
         
                 case 3:
-                    $this->load->view('template/3/header.php');
+                    $this->load->view('template/3/header.php',$data);
                     $this->load->view('index/3/index_view.php');
                     $this->load->view('template/3/footer.php');
                     break;
         
                 case 4:
-                    $this->load->view('template/4/header.php');
+                    $this->load->view('template/4/header.php',$data);
                     $this->load->view('index/4/index_view.php');
                     $this->load->view('template/4/footer.php');
                     break;
         
                 case 5:
-                    $this->load->view('template/5/header.php');
+                    $this->load->view('template/5/header.php',$data);
                     $this->load->view('index/5/index_view.php');
                     $this->load->view('template/5/footer.php');
-                    break;
-            
-                case 6:
-                    $this->load->view('template/6/header.php');
-                    $this->load->view('index/6/index_view.php');
-                    $this->load->view('template/6/footer.php');
                     break;
         
                 default:
