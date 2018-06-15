@@ -6,7 +6,7 @@
                     <div class="news-class">
                     <?php if($produk_count > 0){
                         $i = 0;
-                        foreach($produk_limit as $row){?>
+                        foreach($produk as $row){?>
                             <div class="card border-dark theme-background-news">
                                 <div class="border-dark theme-header">
                                     <h5>

@@ -2,12 +2,12 @@
     
     defined('BASEPATH') OR exit('No direct script access allowed');
     
-    class produk extends CI_Controller {
+    class testimoni extends CI_Controller {
     
         public function index()
         {
             $this->load->model('layout_model');
-            $this->load->model('produk_model');
+            $this->load->model('testimoni_model');
             $this->load->model('slideshow_model');
             
             $page = ($this->input->get('page'))? (int)$this->input->get('page'): 1;
@@ -20,73 +20,73 @@
             $data['slideshow_count'] =  $slideshow_count;
 
             $layout_active = $this->layout_model->GetActiveLayout();
-            $produk_count = $this->produk_model->GetCount();
-            $data['produk_count'] =  $produk_count;
-            $data['produk'] =$this->produk_model->Get();
+            $testimoni_count = $this->testimoni_model->GetCount();
+            $data['testimoni_count'] =  $testimoni_count;
+            $data['testimoni'] = $this->testimoni_model->Get();
 
             switch ($layout_active) {
                 case 1:
                     $limit = 9;
                     $limit_start = ($page - 1) * $limit;
-                    $produk_limit = $this->produk_model->GetLimit($limit_start,$limit);
+                    $testimoni_limit = $this->testimoni_model->GetLimit($limit_start,$limit);
                     
-                    $data['produk_limit'] =  $produk_limit;
+                    $data['testimoni_limit'] =  $testimoni_limit;
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/1/header.php',$data);
-                    $this->load->view('page/1/produk.php');
+                    $this->load->view('page/1/testimoni.php');
                     $this->load->view('template/1/footer.php');
                     break;
         
                 case 2:
                     $limit = 9;
                     $limit_start = ($page - 1) * $limit;
-                    $produk_limit = $this->produk_model->GetLimit($limit_start,$limit);
+                    $testimoni_limit = $this->testimoni_model->GetLimit($limit_start,$limit);
                     
-                    $data['produk_limit'] =  $produk_limit;
+                    $data['testimoni_limit'] =  $testimoni_limit;
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/2/header.php',$data);
-                    $this->load->view('page/2/produk.php');
+                    $this->load->view('page/2/testimoni.php');
                     $this->load->view('template/2/footer.php');
                     break;
         
                 case 3:
                     $limit = 4;
                     $limit_start = ($page - 1) * $limit;
-                    $produk_limit = $this->produk_model->GetLimit($limit_start,$limit);
+                    $testimoni_limit = $this->testimoni_model->GetLimit($limit_start,$limit);
                     
-                    $data['produk_limit'] =  $produk_limit;
+                    $data['testimoni_limit'] =  $testimoni_limit;
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/3/header.php',$data);
-                    $this->load->view('page/3/produk.php');
+                    $this->load->view('page/3/testimoni.php');
                     $this->load->view('template/3/footer.php');
                     break;
         
                 case 4:
                     $limit = 3;
                     $limit_start = ($page - 1) * $limit;
-                    $produk_limit = $this->produk_model->GetLimit($limit_start,$limit);
+                    $testimoni_limit = $this->testimoni_model->GetLimit($limit_start,$limit);
                     
-                    $data['produk_limit'] =  $produk_limit;
+                    $data['testimoni_limit'] =  $testimoni_limit;
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/4/header.php',$data);
-                    $this->load->view('page/4/produk.php');
+                    $this->load->view('page/4/testimoni.php');
                     $this->load->view('template/4/footer.php');
                     break;
         
                 case 5:
                     $limit = 6;
                     $limit_start = ($page - 1) * $limit;
-                    $produk_limit = $this->produk_model->GetLimit($limit_start,$limit);
+                    $testimoni_limit = $this->testimoni_model->GetLimit($limit_start,$limit);
                     
-                    $data['produk_limit'] =  $produk_limit;
+                    $data['testimoni_limit'] =  $testimoni_limit;
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/5/header.php',$data);
-                    $this->load->view('page/5/produk.php');
+                    $this->load->view('page/5/testimoni.php');
                     $this->load->view('template/5/footer.php');
                     break;
         
@@ -97,10 +97,7 @@
         }
     
     }
-
-    function SetLimit($_limit,$page){
-    }
     
-    /* End of file produk.php */
+    /* End of file testimoni.php */
     
 ?>

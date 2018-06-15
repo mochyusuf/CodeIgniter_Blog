@@ -16,6 +16,11 @@
             return $row['jumlah'];
         }
     
+        public function GetLimit($limit_start,$limit){
+            $query = $this->db->query('SELECT testimoni.id_testimoni,testimoni.judul_testimoni,testimoni.gambar_testimoni, testimoni.waktu_pembuatan ,testimoni.testimoni FROM testimoni ORDER BY testimoni.waktu_pembuatan DESC LIMIT ?, ?',array($limit_start,$limit));
+
+            return $query->result_array();
+        }
     }
     
     /* End of file slideshow_model.php */
