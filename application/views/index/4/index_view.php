@@ -6,7 +6,7 @@
                     <?php if($album_count > 0){
                         $i = 0;
                         foreach($album as $row){?>
-                            <a href="<?php echo base_url()."page/galeri.php?album=".$row['id_album']; ?>">
+                            <a href="<?php echo base_url()."index.php/galeri?album=".$row['id_album']; ?>">
                                 <p class="theme-album"><?php echo $row['judul_album']; ?></p>
                                 <img class="img-fluid center-cropped" src="<?php echo base_url().$row["gambar_album"]; ?>" alt="" style="width:100%" id="<?php echo $row['id_album']; ?>">
                             </a>

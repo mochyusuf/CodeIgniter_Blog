@@ -105,12 +105,12 @@
                 $link_prev = ($page > 1)? $page - 1 : 1;
             ?>
                 <li class="page-item theme-page">
-                    <a class="page-link" href="<?php echo base_url()."page/produk.php" ?>?page=1">
+                    <a class="page-link" href="<?php echo base_url()."index.php/produk" ?>?page=1">
                         <i class="fas fa-angle-double-left"></i>
                     </a>
                 </li>
                 <li class="page-item theme-page">
-                    <a class="page-link" href="<?php echo base_url()."page/produk.php" ?>?page=<?php echo $link_prev; ?>">
+                    <a class="page-link" href="<?php echo base_url()."index.php/produk" ?>?page=<?php echo $link_prev; ?>">
                         <i class="fas fa-angle-left"></i>
                     </a>
                 </li>
@@ -128,7 +128,7 @@
                 $link_active = ($page == $i)? ' class="page-item theme-page-active"' : ' class="theme-page"';
             ?>
                 <li <?php echo $link_active; ?>>
-                    <a class="page-link" href="<?php echo base_url()."page/produk.php" ?>?page=<?php echo $i; ?>">
+                    <a class="page-link" href="<?php echo base_url()."index.php/produk" ?>?page=<?php echo $i; ?>">
                         <?php echo $i; ?>
                     </a>
                 </li>
@@ -155,12 +155,12 @@
                 $link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
             ?>
                 <li class="page-item theme-page">
-                    <a class="page-link" href="<?php echo base_url()."page/produk.php" ?>?page=<?php echo $link_next; ?>">
+                    <a class="page-link" href="<?php echo base_url()."index.php/produk" ?>?page=<?php echo $link_next; ?>">
                         <i class="fas fa-angle-right"></i>
                     </a>
                 </li>
                 <li class="page-item theme-page">
-                    <a class="page-link" href="<?php echo base_url()."page/produk.php" ?>?page=<?php echo $jumlah_page; ?>">
+                    <a class="page-link" href="<?php echo base_url()."index.php/produk" ?>?page=<?php echo $jumlah_page; ?>">
                         <i class="fas fa-angle-double-right"></i>
                     </a>
                 </li>

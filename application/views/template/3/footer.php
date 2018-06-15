@@ -18,10 +18,10 @@
                     <div class="col-lg-2 theme-menu-vertical">
                         <a href="<?php echo base_url()."index.php";?>">Home</a><br>
                         <a href="<?php echo base_url()."page/about.php";?>">Tentang</a><br>
-                        <a href="<?php echo base_url()."page/produk.php";?>">Produk</a><br>
-                        <a href="<?php echo base_url()."page/testimoni.php";?>">Testimoni</a><br>
-                        <a href="<?php echo base_url()."page/news.php";?>">Berita</a><br>
-                        <a href="<?php echo base_url()."page/galeri.php";?>">Galeri</a><br>
+                        <a href="<?php echo base_url()."index.php/produk";?>">Produk</a><br>
+                        <a href="<?php echo base_url()."index.php/testimoni";?>">Testimoni</a><br>
+                        <a href="<?php echo base_url()."index.php/news";?>">Berita</a><br>
+                        <a href="<?php echo base_url()."index.php/galeri";?>">Galeri</a><br>
                         <br>
                     </div>
                     <div class="col-lg-10 theme-detail">

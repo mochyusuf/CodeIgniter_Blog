@@ -16,6 +16,7 @@
             if(is_integer($page) && $page > 0){}
             else{$page = 1;}
             $kategori_page = ($this->input->get('kategori'))? (int)$this->input->get('kategori'): 0;
+            $kategori = $kategori_page;
 
             $data['kategori_page'] = $kategori_page;
             $slideshow = $this->slideshow_model->Get();

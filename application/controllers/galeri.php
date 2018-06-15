@@ -15,6 +15,7 @@
             if(is_integer($page) && $page > 0){}
             else{$page = 1;}
             $album_page = ($this->input->get('album'))? (int)$this->input->get('album'): 0;
+            $album = $album_page;
 
             $data['album_page'] = $album_page;
             $slideshow = $this->slideshow_model->Get();

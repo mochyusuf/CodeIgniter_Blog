@@ -6,10 +6,10 @@
                 <ul class="list-group theme-list-group">    
                     <?php 
                     if($kategori_count > 0){?>
-                        <a href="<?php echo base_url()."page/news.php?page=1&kategori=all"; ?>" class="list-group-item <?php echo ($kategori_page == "all") ? "theme-list-active" : "theme-list" ;?>">-- Semua Kategori --</a>
+                        <a href="<?php echo base_url()."index.php/news?page=1&kategori=all"; ?>" class="list-group-item <?php echo ($kategori_page == "all") ? "theme-list-active" : "theme-list" ;?>">-- Semua Kategori --</a>
                         <?php 
                         foreach($kategori as $row){?>
-                            <a href="<?php echo base_url()."page/news.php?page=1&kategori=".$row['id_kategori']; ?>"  class="list-group-item <?php echo ($kategori_page == $row['id_kategori']) ? "theme-list-active" : "theme-list" ;?>"><?php echo $row['nama_kategori']; ?></a>
+                            <a href="<?php echo base_url()."index.php/news?page=1&kategori=".$row['id_kategori']; ?>"  class="list-group-item <?php echo ($kategori_page == $row['id_kategori']) ? "theme-list-active" : "theme-list" ;?>"><?php echo $row['nama_kategori']; ?></a>
                             <?php } ?>
                             <?php 
                     } else{
@@ -162,12 +162,12 @@
 					$link_prev = ($page > 1)? $page - 1 : 1;
 				?>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/news.php" ?>?page=1&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/news" ?>?page=1&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
                             <i class="fas fa-angle-double-left"></i>
                         </a>
                     </li>
 					<li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/news.php" ?>?page=<?php echo $link_prev; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/news" ?>?page=<?php echo $link_prev; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
                             <i class="fas fa-angle-left"></i>
                         </a>
                     </li>
@@ -187,7 +187,7 @@
 					$link_active = ($page == $i)? ' class="page-item theme-page"' : 'class="theme-page"';
 				?>
 					<li <?php echo $link_active; ?>>
-                        <a class="page-link" href="<?php echo base_url()."page/news.php" ?>?page=<?php echo $i; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/news" ?>?page=<?php echo $i; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
                             <?php echo $i; ?>
                         </a>
                     </li>
@@ -216,12 +216,12 @@
 					$link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
 				?>
 					<li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/news.php" ?>?page=<?php echo $link_next; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/news" ?>?page=<?php echo $link_next; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
                             <i class="fas fa-angle-right"></i>
                         </a>
                     </li>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/news.php" ?>?page=<?php echo $jumlah_page; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/news" ?>?page=<?php echo $jumlah_page; ?>&kategori=<?php echo ($kategori_page == 0) ? "all" : $kategori_page; ?>">
                             <i class="fas fa-angle-double-right"></i>
                         </a>
                     </li>

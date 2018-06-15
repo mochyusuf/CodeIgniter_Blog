@@ -6,10 +6,10 @@
                 <ul class="list-group theme-list-group">    
                     <?php 
                     if($album_count > 0){?>
-                        <a href="<?php echo base_url()."page/galeri.php?page=1&album=all"; ?>" class="list-group-item <?php echo ($album_page == "all") ? "theme-list-active" : "theme-list" ;?>">-- Semua Album --</a>
+                        <a href="<?php echo base_url()."index.php/galeri?page=1&album=all"; ?>" class="list-group-item <?php echo ($album_page == "all") ? "theme-list-active" : "theme-list" ;?>">-- Semua Album --</a>
                         <?php 
                         foreach($album as $row){?>
-                            <a href="<?php echo base_url()."page/galeri.php?page=1&album=".$row['id_album']; ?>"  class="list-group-item <?php echo ($album_page == $row['id_album']) ? "theme-list-active" : "theme-list" ;?>"><?php echo $row['judul_album']; ?></a>
+                            <a href="<?php echo base_url()."index.php/galeri?page=1&album=".$row['id_album']; ?>"  class="list-group-item <?php echo ($album_page == $row['id_album']) ? "theme-list-active" : "theme-list" ;?>"><?php echo $row['judul_album']; ?></a>
                             <?php } ?>
                             <?php 
                     } else{
@@ -96,12 +96,12 @@
                     $link_prev = ($page > 1)? $page - 1 : 1;
             ?>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/galeri.php" ?>?page=1&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/galeri" ?>?page=1&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
                             <i class="fas fa-angle-double-left"></i>
                         </a>
                     </li>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/galeri.php" ?>?page=<?php echo $link_prev; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/galeri" ?>?page=<?php echo $link_prev; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
                             <i class="fas fa-angle-left"></i>
                         </a>
                     </li>
@@ -120,7 +120,7 @@
                 $link_active = ($page == $i)? ' class="page-item theme-page-active"' : 'class="theme-page"';
             ?>
                 <li <?php echo $link_active; ?>>
-                    <a class="page-link" href="<?php echo base_url()."page/galeri.php" ?>?page=<?php echo $i; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page;; ?>">
+                    <a class="page-link" href="<?php echo base_url()."index.php/galeri" ?>?page=<?php echo $i; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page;; ?>">
                         <?php echo $i; ?>
                     </a>
                 </li>
@@ -146,12 +146,12 @@
                     $link_next = ($page < $jumlah_page)? $page + 1 : $jumlah_page;
                 ?>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/galeri.php" ?>?page=<?php echo $link_next; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/galeri" ?>?page=<?php echo $link_next; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
                             <i class="fas fa-angle-right"></i>
                         </a>
                     </li>
                     <li class="page-item theme-page">
-                        <a class="page-link" href="<?php echo base_url()."page/galeri.php" ?>?page=<?php echo $jumlah_page; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
+                        <a class="page-link" href="<?php echo base_url()."index.php/galeri" ?>?page=<?php echo $jumlah_page; ?>&album=<?php echo ($album_page == 0) ? "all" : $album_page; ?>">
                             <i class="fas fa-angle-double-right"></i>
                         </a>
                     </li>
