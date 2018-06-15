@@ -10,6 +10,12 @@
             return $query->result_array();
         }
 
+        public function GetDetail($id){
+            $query = $this->db->query('SELECT produk.id_produk, produk.nama_produk, produk.gambar, produk.deskripsi FROM produk WHERE id_produk = ?',array($id));
+
+            return $query->row_array();
+        }
+
         public function GetLimit($limit_start,$limit){
             $query = $this->db->query('SELECT produk.id_produk,produk.nama_produk,produk.gambar,produk.deskripsi FROM produk ORDER BY produk.waktu_pembuatan DESC LIMIT ?, ?',array($limit_start,$limit));
 

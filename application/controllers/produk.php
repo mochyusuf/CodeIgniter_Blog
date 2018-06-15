@@ -3,7 +3,7 @@
     defined('BASEPATH') OR exit('No direct script access allowed');
     
     class produk extends CI_Controller {
-    
+
         public function index()
         {
             $this->load->model('layout_model');
@@ -96,10 +96,65 @@
             }
         }
     
+        
+        public function detail(){
+            $this->load->model('layout_model');
+            $this->load->model('produk_model');
+            $this->load->model('slideshow_model');
+            $layout_active = $this->layout_model->GetActiveLayout();
+            $id = 0;
+            if($this->input->get('id')){
+                $id = $this->input->get('id');
+            }else{
+                $id = 0;
+            }
+            $slideshow = $this->slideshow_model->Get();
+            $data['slideshow'] =  $slideshow;
+            $slideshow_count = $this->slideshow_model->GetCount();
+            $data['slideshow_count'] =  $slideshow_count;
+            $data['id'] = $id;
+            if ($id != 0) {
+                $data['produk_detail'] = $this->produk_model->GetDetail($id);
+            }
+            
+            switch ($layout_active) {
+                case 1:
+                    $this->load->view('template/1/header.php',$data);
+                    $this->load->view('detail/1/view_produk.php');
+                    $this->load->view('template/1/footer.php');
+                    break;
+        
+                case 2:
+                    $this->load->view('template/2/header.php',$data);
+                    $this->load->view('detail/2/view_produk.php');
+                    $this->load->view('template/2/footer.php');
+                    break;
+        
+                case 3:
+                    $this->load->view('template/3/header.php',$data);
+                    $this->load->view('detail/3/view_produk.php');
+                    $this->load->view('template/3/footer.php');
+                    break;
+        
+                case 4:
+                    $this->load->view('template/4/header.php',$data);
+                    $this->load->view('detail/4/view_produk.php');
+                    $this->load->view('template/4/footer.php');
+                    break;
+        
+                case 5:
+                    $this->load->view('template/5/header.php',$data);
+                    $this->load->view('detail/5/view_produk.php');
+                    $this->load->view('template/5/footer.php');
+                    break;
+        
+                default:
+                echo "Error 404 Page Not Found";
+                    break;
+            }
+        }
     }
 
-    function SetLimit($_limit,$page){
-    }
     
     /* End of file produk.php */
     
