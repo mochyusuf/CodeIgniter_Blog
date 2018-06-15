@@ -10,6 +10,12 @@
             return $query->result_array();
         }
 
+        public function GetLimit($limit_start,$limit){
+            $query = $this->db->query('SELECT produk.id_produk,produk.nama_produk,produk.gambar,produk.deskripsi FROM produk ORDER BY produk.waktu_pembuatan DESC LIMIT ?, ?',array($limit_start,$limit));
+
+            return $query->result_array();
+        }
+
         public function GetCount(){
             $data = $this->db->query("SELECT COUNT(produk.id_produk) AS jumlah FROM produk");
             $row = $data->row_array();

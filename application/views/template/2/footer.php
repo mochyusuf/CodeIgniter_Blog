@@ -14,11 +14,11 @@
                     <div class="row">
                         <div class="col-lg-2 theme-menu-vertical">
                             <a href="<?php echo base_url()."index.php";?>">Home</a><br>
-                            <a href="<?php echo base_url()."page/about.php";?>">Tentang</a><br>
-                            <a href="<?php echo base_url()."page/produk.php";?>">Produk</a><br>
-                            <a href="<?php echo base_url()."page/testimoni.php";?>">Testimoni</a><br>
-                            <a href="<?php echo base_url()."page/news.php";?>">Berita</a><br>
-                            <a href="<?php echo base_url()."page/galeri.php";?>">Galeri</a><br>
+                            <a href="<?php echo base_url()."index.php/about";?>">Tentang</a><br>
+                            <a href="<?php echo base_url()."index.php/produk";?>">Produk</a><br>
+                            <a href="<?php echo base_url()."index.php/testimoni";?>">Testimoni</a><br>
+                            <a href="<?php echo base_url()."index.php/news";?>">Berita</a><br>
+                            <a href="<?php echo base_url()."index.php/galeri";?>">Galeri</a><br>
                         </div>
                         <div class="col-lg-10">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et consectetur voluptatem reiciendis, asperiores voluptatibus architecto in at illum nemo quas accusamus exercitationem dignissimos inventore culpa, iure ad minus deleniti quaerat!</p>

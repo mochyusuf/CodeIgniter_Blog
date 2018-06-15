@@ -31,19 +31,19 @@
                     <a class="nav-link" href="<?php echo base_url()."index.php";?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()."page/about.php";?>">Tentang</a>
+                    <a class="nav-link" href="<?php echo base_url()."index.php/about";?>">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()."page/produk.php";?>">Produk</a>
+                    <a class="nav-link" href="<?php echo base_url()."index.php/produk";?>">Produk</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()."page/testimoni.php";?>">Testimoni</a>
+                    <a class="nav-link" href="<?php echo base_url()."index.php/testimoni";?>">Testimoni</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()."page/news.php";?>">Berita</a>
+                    <a class="nav-link" href="<?php echo base_url()."index.php/news";?>">Berita</a>
                 </li> 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url()."page/galeri.php";?>">Galeri</a>
+                    <a class="nav-link" href="<?php echo base_url()."index.php/galeri";?>">Galeri</a>
                 </li> 
             </ul>
         </div>

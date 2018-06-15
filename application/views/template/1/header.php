@@ -62,3 +62,33 @@
         </a>
     </div>
     <!-- End Carousel -->
+
+<!-- NavBar -->
+<div class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark theme-navbar">
+            <a class="navbar-brand theme-navbar-brand" href="<?php echo base_url()."index.php";?>">Navbar</a>
+            <button class="navbar-toggler theme-navbar-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item theme-navbar-item">
+                        <a class="nav-link theme-navbar-link" href="<?php echo base_url()."index.php/about";?>">Tentang</a>
+                    </li>
+                    <li class="nav-item theme-navbar-item">
+                        <a class="nav-link theme-navbar-link" href="<?php echo base_url()."index.php/produk";?>">Produk</a>
+                    </li>
+                    <li class="nav-item theme-navbar-item">
+                        <a class="nav-link theme-navbar-link" href="<?php echo base_url()."index.php/testimoni";?>">Testimoni</a>
+                    </li>
+                    <li class="nav-item theme-navbar-item">
+                        <a class="nav-link theme-navbar-link" href="<?php echo base_url()."index.php/news";?>">Berita</a>
+                    </li>
+                    <li class="nav-item theme-navbar-item">
+                        <a class="nav-link theme-navbar-link" href="<?php echo base_url()."index.php/galeri";?>">Galeri</a>
+                    </li>   
+                </ul>
+            </div>  
+        </nav>
+    </div>
+    <!-- End NavBar -->
