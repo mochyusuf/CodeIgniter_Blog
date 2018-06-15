@@ -96,7 +96,6 @@
             }
         }
     
-        
         public function detail(){
             $this->load->model('layout_model');
             $this->load->model('produk_model');

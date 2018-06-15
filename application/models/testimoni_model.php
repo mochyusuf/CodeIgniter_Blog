@@ -10,6 +10,12 @@
             return $query->result_array();
         }
 
+        public function GetDetail($id){
+            $query = $this->db->query('SELECT testimoni.id_testimoni, testimoni.judul_testimoni, testimoni.gambar_testimoni, testimoni.testimoni, testimoni.waktu_pembuatan,user.nama FROM testimoni INNER JOIN user ON testimoni.id_user = user.id_user WHERE id_testimoni = ?',array($id));
+
+            return $query->row_array();
+        }
+
         public function GetCount(){
             $data = $this->db->query("SELECT COUNT(testimoni.id_testimoni) AS jumlah FROM testimoni");
             $row = $data->row_array();

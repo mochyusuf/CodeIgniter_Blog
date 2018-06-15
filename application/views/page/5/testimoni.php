@@ -25,7 +25,7 @@
                                                     <p><?php echo strip_tags(html_entity_decode($row['testimoni'])); ?></p>
                                                 </div>
                                             </div>
-                                                <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>view/view_testimoni.php?id=<?php echo $row["id_testimoni"]; ?>">Baca Selengkapnya</a>
+                                                <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>index.php/testimoni/detail?id=<?php echo $row["id_testimoni"]; ?>">Baca Selengkapnya</a>
                                             </div>
                                         </div>
                                 <?php } ?>

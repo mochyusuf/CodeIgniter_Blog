@@ -71,7 +71,7 @@
                                                 <img class="center-cropped img-fluid" src="<?php echo base_url().$row["gambar_testimoni"]; ?>" alt="" >
                                             </div>
                                         </div>
-                                        <a href="<?php echo base_url()."view/view_testimoni.php";?>?id=<?php echo $row["id_testimoni"]; ?>" class="btn btn-primary theme-btn-primary">Selengkapnya</a>
+                                        <a href="<?php echo base_url()."index.php/testimoni/detail";?>?id=<?php echo $row["id_testimoni"]; ?>" class="btn btn-primary theme-btn-primary">Selengkapnya</a>
                                     </div>
                                     <?php 
                                     $i++;
@@ -166,7 +166,7 @@
                                             <div class="card theme-card-body theme-space">
                                             <h4 class="card-title text-center"><?php echo $row["nama_produk"]; ?></h4>
                                                 <img class="center-cropped-image" img="img-fluid" src="<?php echo base_url().$row["gambar"]; ?>" alt="" style="width:100%">
-                                                <a href="<?php echo base_url()."view/view_produk.php";?>?id=<?php echo $row["id_produk"]; ?>" class="btn btn-primary btn-block theme-btn-primary">Selengkapnya</a>
+                                                <a href="<?php echo base_url()."index.php/produk/detail";?>?id=<?php echo $row["id_produk"]; ?>" class="btn btn-primary btn-block theme-btn-primary">Selengkapnya</a>
                                             </div>
                                         </div>
                                         <?php 

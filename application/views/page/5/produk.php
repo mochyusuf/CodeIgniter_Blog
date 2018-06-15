@@ -23,7 +23,7 @@
                                                     <img class="img-fluid" src="<?php echo base_url().$row["gambar"]; ?>" alt="">
                                                 </div>
                                             </div>
-                                                <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>view/view_produk.php?id=<?php echo $row["id_produk"]; ?>">Baca Selengkapnya</a>
+                                                <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>index.php/produk/detail?id=<?php echo $row["id_produk"]; ?>">Baca Selengkapnya</a>
                                             </div>
                                         </div>
                                 <?php } ?>
