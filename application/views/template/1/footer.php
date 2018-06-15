@@ -29,7 +29,7 @@
             $('.view_data').click(function(){  
                 var id_galeri = $(this).attr("id");  
                 $.ajax({  
-                        url:"index.php/modal/image_modal",  
+                        url:"<?php echo base_url(); ?>index.php/modal/image_modal",  
                         method:"post",  
                         data:{id_galeri:id_galeri},  
                         success:function(data){  

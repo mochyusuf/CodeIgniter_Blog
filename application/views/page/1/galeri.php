@@ -23,6 +23,7 @@
                             } else{
 								//Album = 0
                                 ?>
+                
                                 <h6>Tidak Ada Album</h6>
                                 <?php
                             }
