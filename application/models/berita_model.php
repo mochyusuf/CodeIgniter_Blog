@@ -10,6 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             return $query->result_array();
         }
 
+        public function GetDetail($id){
+            $query = $this->db->query('SELECT berita.id_berita,berita.judul,berita.gambar,berita.isi, kategori.nama_kategori, berita.waktu_pembuatan,user.nama FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori INNER JOIN user ON berita.id_user = user.id_user WHERE id_berita = ?',array($id));
+
+            return $query->row_array();
+        }
+
         public function GetLimit($limit_start,$limit){
             $query = $this->db->query('SELECT berita.id_berita,berita.judul,berita.gambar,berita.isi, kategori.nama_kategori, berita.waktu_pembuatan FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori where kategori.status = 1 ORDER BY berita.waktu_pembuatan DESC LIMIT ?, ?',array($limit_start,$limit));
 

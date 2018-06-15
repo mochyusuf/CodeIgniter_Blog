@@ -15,7 +15,7 @@
                                                     <h4 class="card-title text-center"><?php echo cutText($row["judul"],25); ?></h4>
                                                 </div>
                                                 <div class="col-xs-12 col-lg-12 text-center">
-                                                    <a href="<?php echo base_url()."view/view_news.php"; ?>?id=<?php echo $row["id_berita"]; ?>" class="theme-btn-primary btn-block" style="height : 100%; width : 100%">Selengkapnya</a>
+                                                    <a href="<?php echo base_url()."index.php/news/detail"; ?>?id=<?php echo $row["id_berita"]; ?>" class="theme-btn-primary btn-block" style="height : 100%; width : 100%">Selengkapnya</a>
                                                 </div>
                                             </div>
                                         </div>

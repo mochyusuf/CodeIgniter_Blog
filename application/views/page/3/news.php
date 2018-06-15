@@ -76,7 +76,7 @@
                                     <div class="container-fluid">
                                     </div>
                                 </div>
-                                    <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>view/view_news.php?id=<?php echo $row["id_berita"]; ?>">Baca Selengkapnya</a>
+                                    <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>index.php/news/detail?id=<?php echo $row["id_berita"]; ?>">Baca Selengkapnya</a>
                                 </div>
                             </div>
                             

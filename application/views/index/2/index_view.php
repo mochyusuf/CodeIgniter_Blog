@@ -134,7 +134,7 @@
                                                     <p class="card-text"><?php echo cutText(strip_tags(html_entity_decode($row["isi"])),50); ?></p>
                                                 </div>
                                             </div>
-                                            <a href="<?php echo base_url()."view/view_news.php";?>?id=<?php echo $row["id_berita"]; ?>" class="btn btn-primary btn-block theme-btn-primary">Selengkapnya</a>
+                                            <a href="<?php echo base_url()."index.php/news/detail";?>?id=<?php echo $row["id_berita"]; ?>" class="btn btn-primary btn-block theme-btn-primary">Selengkapnya</a>
                                         </div>
                                         <?php 
                                         $i++;

@@ -32,7 +32,7 @@
                                         <div class="card-body">
                                             <h4 class="card-title"><?php echo $row["judul"]; ?></h4>
                                             <p class="card-text"><?php echo cutText(strip_tags(html_entity_decode($row["isi"])),50); ?></p>
-                                            <a href="<?php echo base_url()."view/view_news.php";?>?id=<?php echo $row["id_berita"]; ?>" class="btn btn-primary theme-btn-primary">Selengkapnya</a>
+                                            <a href="<?php echo base_url()."index.php/news/detail";?>?id=<?php echo $row["id_berita"]; ?>" class="btn btn-primary theme-btn-primary">Selengkapnya</a>
                                         </div>
                                     </div>
                                 </div>

@@ -72,7 +72,7 @@
                                             <p><?php echo cutText(strip_tags(html_entity_decode($row["isi"])),300); ?></p>
                                         </div>
                                     </div>
-                                        <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>view/view_news.php?id=<?php echo $row["id_berita"]; ?>">Baca Selengkapnya</a>
+                                        <a class="btn btn-primary btn-block theme-btn-primary" href="<?php echo base_url(); ?>index.php/news/detail?id=<?php echo $row["id_berita"]; ?>">Baca Selengkapnya</a>
                                     </div>
                                 </div>
                             <?php } ?>
