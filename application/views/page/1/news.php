@@ -32,7 +32,7 @@
                         <h2>Kategori</h2>
                         <ul class="list-group">
                         <?php 
-                                if($news_count > 0){
+                                if($kategori_count > 0){
                                     ?>
                                     <a href="<?php echo base_url()."page/news.php?page=1&kategori=all"; ?>" class="list-group-item <?php echo ($kategori_page == "all") ? "theme-list-active" : "theme-list" ;?>">-- Semua Kategori --</a>                                    
                                     <?php

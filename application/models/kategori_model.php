@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
 
         public function GetCount(){
-            $data = $this->db->query("SELECT COUNT(*) FROM kategori where status = 1");
+            $data = $this->db->query("SELECT COUNT(*) AS jumlah FROM kategori where status = 1");
             $row = $data->row_array();
             return $row['jumlah'];
         }

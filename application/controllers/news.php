@@ -26,6 +26,8 @@
             $layout_active = $this->layout_model->GetActiveLayout();
             $data['tag'] =$this->tag_model->Get();
             $data['kategori'] =$this->kategori_model->Get();
+            $data['kategori_count'] =$this->kategori_model->GetCount();
+            $data['news'] =$this->berita_model->Get();
             switch ($layout_active) {
                 case 1:
                     $limit = 3;
@@ -53,11 +55,23 @@
                     break;
         
                 case 2:
-                    $limit = 9;
+                    $limit = 4;
                     $limit_start = ($page - 1) * $limit;
-                    $news_limit = $this->berita_model->GetLimit($limit_start,$limit);
-                    
-                    $data['news_limit'] =  $news_limit;
+                    if($this->input->get('kategori')){
+                        if($kategori_page == 0){
+                            $data['news_count'] =  $this->berita_model->GetCount();
+                            $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                        }
+                        else{
+                            $data['news_count'] =  $this->berita_model->GetCountKategori($kategori);
+                            $data['news_limit'] = $this->berita_model->GetLimitKategori($kategori,$limit_start,$limit);
+                        }
+                    }
+                    else{
+                        $data['news_count'] =  $this->berita_model->GetCount();
+                        $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                    }
+
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/2/header.php',$data);
@@ -66,11 +80,23 @@
                     break;
         
                 case 3:
-                    $limit = 4;
+                    $limit = 3;
                     $limit_start = ($page - 1) * $limit;
-                    $news_limit = $this->berita_model->GetLimit($limit_start,$limit);
-                    
-                    $data['news_limit'] =  $news_limit;
+                    if($this->input->get('kategori')){
+                        if($kategori_page == 0){
+                            $data['news_count'] =  $this->berita_model->GetCount();
+                            $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                        }
+                        else{
+                            $data['news_count'] =  $this->berita_model->GetCountKategori($kategori);
+                            $data['news_limit'] = $this->berita_model->GetLimitKategori($kategori,$limit_start,$limit);
+                        }
+                    }
+                    else{
+                        $data['news_count'] =  $this->berita_model->GetCount();
+                        $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                    }
+
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/3/header.php',$data);
@@ -79,11 +105,23 @@
                     break;
         
                 case 4:
-                    $limit = 3;
+                    $limit = 4;
                     $limit_start = ($page - 1) * $limit;
-                    $news_limit = $this->berita_model->GetLimit($limit_start,$limit);
-                    
-                    $data['news_limit'] =  $news_limit;
+                    if($this->input->get('kategori')){
+                        if($kategori_page == 0){
+                            $data['news_count'] =  $this->berita_model->GetCount();
+                            $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                        }
+                        else{
+                            $data['news_count'] =  $this->berita_model->GetCountKategori($kategori);
+                            $data['news_limit'] = $this->berita_model->GetLimitKategori($kategori,$limit_start,$limit);
+                        }
+                    }
+                    else{
+                        $data['news_count'] =  $this->berita_model->GetCount();
+                        $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                    }
+
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/4/header.php',$data);
@@ -92,11 +130,23 @@
                     break;
         
                 case 5:
-                    $limit = 6;
+                    $limit = 4;
                     $limit_start = ($page - 1) * $limit;
-                    $news_limit = $this->berita_model->GetLimit($limit_start,$limit);
-                    
-                    $data['news_limit'] =  $news_limit;
+                    if($this->input->get('kategori')){
+                        if($kategori_page == 0){
+                            $data['news_count'] =  $this->berita_model->GetCount();
+                            $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                        }
+                        else{
+                            $data['news_count'] =  $this->berita_model->GetCountKategori($kategori);
+                            $data['news_limit'] = $this->berita_model->GetLimitKategori($kategori,$limit_start,$limit);
+                        }
+                    }
+                    else{
+                        $data['news_count'] =  $this->berita_model->GetCount();
+                        $data['news_limit'] = $this->berita_model->GetLimit($limit_start,$limit);
+                    }
+
                     $data['page'] =  $page;
                     $data['limit'] = $limit;
                     $this->load->view('template/5/header.php',$data);

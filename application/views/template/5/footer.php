@@ -24,6 +24,7 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php echo base_url(); ?>assets/js/javascript.js"></script>
     <script src="<?php echo base_url();?>vendor/components/jquery/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>node_modules/popper.js/dist/popper.js"></script>
     <script src="<?php echo base_url(); ?>vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>vendor/ivaynberg/select2/dist/js/select2.js"></script>
 	
