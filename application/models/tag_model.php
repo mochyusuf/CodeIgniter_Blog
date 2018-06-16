@@ -10,6 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             return $query->result_array();
         }
 
+        public function GetDetail($id){
+            $query = $this->db->query('SELECT tag.nama_tag FROM tag WHERE tag.id_tag = ?',array($id));
+
+            return $query->row_array();
+        }
+
         public function GetNews($id){
             $query = $this->db->query('SELECT berita.id_berita, tag_berita.id_tag, tag.nama_tag FROM berita INNER JOIN tag_berita ON berita.id_berita = tag_berita.id_berita INNER JOIN tag ON tag_berita.id_tag = tag.id_tag WHERE berita.id_berita = ?',array($id));
 

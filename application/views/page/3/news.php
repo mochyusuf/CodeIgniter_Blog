@@ -19,7 +19,7 @@
                     } ?>
                 </ul>   
                     <div class="input-group theme-search theme-space">
-                        <form id="tag_search" class="form-inline width-100" action="../search/search_news.php" method="POST">
+                        <form id="tag_search" class="form-inline width-100" action="../index.php/search/news" method="GET">
                             <div class="row width-100">
                                 <div class="col-md-10 col-lg-10">
                                     <select id="tag_select" class="js-example-basic-single width-100" name="id_tag">

@@ -26,7 +26,7 @@
                                         if($tag_news_count > 0){
                                             foreach($tag_news as $row){?>
                                             <div class="d-inline theme-tag">
-                                                <a href="<?php echo base_url()."search/search_news.php?id_tag=".$row['id_tag']; ?>">
+                                                <a href="<?php echo base_url()."index.php/search/news?id_tag=".$row['id_tag']; ?>">
                                                     <small>
                                                         <?php echo $row['nama_tag'];?>
                                                     </small>

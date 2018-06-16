@@ -28,6 +28,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             return $query->result_array();
         }
 
+        public function GetLimitTag($tag,$limit_start,$limit){
+            $query = $this->db->query('SELECT berita.id_berita,berita.judul,berita.gambar,berita.isi, kategori.nama_kategori, berita.waktu_pembuatan FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori INNER JOIN tag_berita ON berita.id_berita = tag_berita.id_berita where kategori.status = 1 AND tag_berita.id_tag = ? ORDER BY berita.waktu_pembuatan DESC LIMIT ?,?',array($tag,$limit_start,$limit));
+
+            return $query->result_array();
+        }
+
         public function GetCount(){
             $data = $this->db->query("SELECT COUNT(berita.id_berita) AS jumlah FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori where kategori.status = 1");
             $row = $data->row_array();
@@ -36,6 +42,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function GetCountKategori($kategori){
             $data = $this->db->query("SELECT COUNT(berita.id_berita) AS jumlah FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori where kategori.status = 1 AND berita.id_kategori = ?",array($kategori));
+            $row = $data->row_array();
+            return $row['jumlah'];
+        }
+
+        public function GetCountTag($tag){
+            $data = $this->db->query("SELECT COUNT(berita.id_berita) AS jumlah FROM berita INNER JOIN kategori ON berita.id_kategori = kategori.id_kategori INNER JOIN tag_berita ON berita.id_berita = tag_berita.id_berita where kategori.status = 1 AND tag_berita.id_tag = ?",array($tag));
             $row = $data->row_array();
             return $row['jumlah'];
         }
