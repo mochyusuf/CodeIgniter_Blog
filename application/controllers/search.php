@@ -1,6 +1,5 @@
 <?php
 
-    
     defined('BASEPATH') OR exit('No direct script access allowed');
     
     class search extends CI_Controller {
